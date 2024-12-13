@@ -18,8 +18,8 @@
     <p>Aprendendo a usar <strong>DOM</strong> em <strong>JavasSript</strong></p>
     <div>Clique em mim</div>
     <script>
-        var p1 = window.document.getElementsByTagName('p')
-        window.document.write('Olá,mundo!')
+        var p1 = window.document.getElementsByTagName('p')[0]
+        window.document.write('Está escrito assim '+ p1.innerText)
     </script>
 </body>
 </html>
