@@ -4,11 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            background-color: aquamarine;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="area" onmo>Interaja</div>
     <script>
-        
+        area.addEventListener('click',clicar)
+        area.addEventListener('mouseout',sair)
+        function clicar(){
+            var area = window.document.getElementById("area")
+            area.style.background='red'
+        }
+        function sair(){
+            var area = window.document.getElementById("area")
+            area.style.background='blue'
+        }
     </script>
 </body>
 </html>
