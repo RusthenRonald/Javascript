@@ -16,6 +16,9 @@
             var velo = window.document.getElementById('txtvel')
             var velo = Number(velo.value)
             res.innerHTML = `Sua velocidade atual é de ${velo}`
+            if (velo>60){
+                res.innerHTML+=` <br>Multado!`
+            }
         }
     </script>
 </body>
