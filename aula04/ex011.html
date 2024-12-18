@@ -15,6 +15,12 @@
         var pais = window.document.getElementById('pais')
         function verificar(){
             res.innerText = pais.value
+            if (pais.value == 'Brasil'){
+                res.innerHTML+=`<br>Você é Brasileiro!`
+            }
+            else{
+                res.innerHTML+=`<br>Você é Estrangeiro!`
+            }
         }
      </script>
 </body>
