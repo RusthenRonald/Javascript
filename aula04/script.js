@@ -13,13 +13,16 @@ function carregar(){
     else if (hora<12){
         corpo.style.background='yellow'
         msg.innerHTML+=' Bom dia!'
+        foto.src='../img/manha.png'
     }
     else if (hora>=12 && hora <18){
         corpo.style.background='orange'
         msg.innerHTML+=' Boa Tarde!'
+        foto.src='../img/manha.png'
     }
     else{
         corpo.style.background='blue'
         msg.innerHTML+=' Boa Noite!'
+        foto.src='../img/noite.png'
     }
 }
