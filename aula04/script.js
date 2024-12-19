@@ -8,4 +8,13 @@ function carregar(){
     if (hora>=0 && hora <5){
         corpo.style.background = 'darkblue'
     }
+    else if (hora<12){
+        corpo.style.background='yellow'
+    }
+    else if (hora>=12 && hora <18){
+        corpo.style.background='orange'
+    }
+    else{
+        corpo.style.background='blue'
+    }
 }
