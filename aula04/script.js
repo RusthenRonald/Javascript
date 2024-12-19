@@ -8,6 +8,7 @@ function carregar(){
     if (hora>=0 && hora <5){
         corpo.style.background = 'darkblue'
         msg.innerHTML+=' Boa Madrugada!'
+        foto.src='../img/noite.png'
     }
     else if (hora<12){
         corpo.style.background='yellow'
