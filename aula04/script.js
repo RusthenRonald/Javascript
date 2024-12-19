@@ -1,2 +1,4 @@
-var msg = window.document.getElementById('msg')
-var foto=window.document.getElementById('foto')
+function carregar(){
+    var msg = window.document.getElementById('msg')
+    var foto=window.document.getElementById('foto')
+}
