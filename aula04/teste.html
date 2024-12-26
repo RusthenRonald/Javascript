@@ -18,6 +18,14 @@
     </style>
 </head>
 <body>
-   
+   <div id="area" onmouseenter="entrar()">
+        <p>Interaja</p>
+   </div>
+   <script>
+        var area = window.document.getElementById('area')
+        function entrar(){
+            area.innerHTML='Entrou!'
+        }
+   </script>
 </body>
 </html>
