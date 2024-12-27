@@ -49,12 +49,16 @@
     </footer>
     <script>
         function verificar(){
-            var ano_atual = new Date().getFullYear()
-            var nasc = window.document.getElementById('txtano')
+            var ano_atual = new Date().getFullYear() // ano atual do sistema
+            var nasc = window.document.getElementById('txtano') //peguei por id
             var res = window.document.getElementById('res')
-            var nasc = Number(txtano.value)
-            var idade = ano_atual-nasc
+            var nasc = Number(txtano.value) //converti pra numero
+            var idade = ano_atual-nasc 
             res.innerHTML=idade
+            //se ele não digitou nehum valor ou seja se o comprimento é 0
+            if (txtano.value.length==0){
+                window.alert('Dados inválidos. Tente novamente')
+            }
         }
     </script>
 </body>
