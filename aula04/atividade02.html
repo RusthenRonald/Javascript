@@ -56,7 +56,7 @@
             var idade = ano_atual-nasc 
             res.innerHTML=idade
             //se ele não digitou nehum valor ou seja se o comprimento é 0
-            if (txtano.value.length==0){
+            if (txtano.value.length==0 || txtano.value>ano_atual){
                 window.alert('Dados inválidos. Tente novamente')
             }
         }
