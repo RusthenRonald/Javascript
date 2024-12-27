@@ -49,10 +49,12 @@
     </footer>
     <script>
         function verificar(){
-            var ano = new Date().getFullYear()
-            var ano = window.document.getElementById('txtano')
-            var sexo = window.document.getElementById('mas')
-        
+            var ano_atual = new Date().getFullYear()
+            var nasc = window.document.getElementById('txtano')
+            var res = window.document.getElementById('res')
+            var nasc = Number(txtano.value)
+            var idade = ano_atual-nasc
+            res.innerHTML=idade
         }
     </script>
 </body>
