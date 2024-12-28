@@ -49,12 +49,15 @@
     </footer>
     <script>
         function verificar(){
+            //selecionei por id
             var ano = new Date().getFullYear()
             var fano = window.document.getElementById('txtano')
             var res = window.document.getElementById('res')
+            //validação para n permitir vazio e nasc maior q ano atual
             if (fano.value.length == 0 || fano.value>ano){
                 window.alert('Verifique os dados')
             }
+            //programa executa após validação
             else{
                 window.alert('Tudo ok')
             }
