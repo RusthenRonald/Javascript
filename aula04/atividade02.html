@@ -49,21 +49,7 @@
     </footer>
     <script>
         function verificar(){
-            var ano_atual = new Date().getFullYear() // ano atual do sistema
-            var nasc = window.document.getElementById('txtano') //peguei por id
-            var res = window.document.getElementById('res')
-            //se ele não digitou nehum valor ou seja se o comprimento é 0
-            if (txtano.value.length==0 || txtano.value>ano_atual){
-                window.alert('Dados inválidos. Tente novamente')
-            }
-            else{
-                //programa só ocorre aqui, após a validação
-                //vou pegar meu name do radio
-                var fsexo = window.document.getElementsByName('radsex')
-                var nasc = Number(txtano.value) //converti pra numero
-                var idade = ano_atual-nasc 
-                res.innerHTML=`Idade calculada ${idade}`
-            }
+            
         }
     </script>
 </body>
