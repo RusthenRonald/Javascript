@@ -53,7 +53,10 @@
             var ini = Number(txtini.value)
             var fim = Number(txtfim.value)
             var pas = Number(txtpas.value)
-            res.innerHTML=ini+fim+pas
+            for (var i = ini; ini<=fim;i+=pas){
+                console.log(i)
+            }
+            res.innerHTML=i
        }
     </script>
 </body>
