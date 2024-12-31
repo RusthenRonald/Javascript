@@ -32,9 +32,9 @@
     </header>
     <section>
         <div>
-            <p>Início: <input type="number" name="" id="txtini"></p>
-            <p>Fim: <input type="number" name="" id="txtfim"></p>
-            <p>Passo: <input type="number" name="" id="txtpas"></p>
+            <p>Início: <input type="number" name="" id="txti"></p>
+            <p>Fim: <input type="number" name="" id="txtf"></p>
+            <p>Passo: <input type="number" name="" id="txtp"></p>
             <input type="button" value="Contar" onclick="contar()">
         </div>
         <div id="res">
@@ -46,11 +46,13 @@
     </footer>
     <script>
        function contar(){
-            var ini = document.getElementById('txtini')
-            var fim = document.getElementById('txtfim')
-            var pas= document.getElementById('txtpas')
+            var ini = document.getElementById('txti')
+            var fim = document.getElementById('txtf')
+            var passo= document.getElementById('txtp')
             var res = document.getElementById('res')
-            
+            if (ini.value.length==0 || fim.value.length ==0 || passo.value.length==0){
+                window.alert('dados inválidos')
+            }
        }
     </script>
 </body>
