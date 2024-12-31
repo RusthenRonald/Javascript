@@ -51,8 +51,9 @@
            var c = 1
            while (c<10){
                 var item = document.createElement('option')
-                res.innerHTML+=`${num}x${c}=${num*c}`
+                item.text=`${num}x${c}=${num*c}`
                 c++
+                res.appendChild(item)
            }
        }
     </script>
