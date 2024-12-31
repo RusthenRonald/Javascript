@@ -32,6 +32,7 @@
     </header>
     <section>
         <div>
+            <p><label for="n">Número: </label><input type="number" name="" id="n"> <input type="button" value="gerar tabuada" onclick="gerar()"></p>
             
         </div>
         <div id="res">
@@ -42,7 +43,11 @@
         <p>&copy;CursoemVideo</p>
     </footer>
     <script>
-       
+       function gerar(){
+            var num= Number(document.getElementById('n').value)
+            var res = document.getElementById('res')
+            for (var c = num)
+       }
     </script>
 </body>
 </html>
