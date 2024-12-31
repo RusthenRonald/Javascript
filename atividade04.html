@@ -35,9 +35,7 @@
             <p><label for="n">Número: </label><input type="number" name="" id="n"> <input type="button" value="gerar tabuada" onclick="gerar()"></p>
             
         </div>
-        <div id="res">
-
-        </div>
+        <select name="" id="res"></select>
     </section>
     <footer>
         <p>&copy;CursoemVideo</p>
@@ -52,6 +50,7 @@
             }*/
            var c = 1
            while (c<10){
+                var item = document.createElement('option')
                 res.innerHTML+=`${num}x${c}=${num*c}`
                 c++
            }
