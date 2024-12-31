@@ -54,12 +54,12 @@
                 window.alert('[ERRO] Faltam Dados!')
             }
             else{
-                res.innerHTML='Contando....'
+                res.innerHTML='Contando.... '
                 var i = Number(ini.value)
                 var f = Number(fim.value)
                 var p = Number(passo.value)
-                for (var c = i;i<=f;i+=p){
-                    
+                for (var c = i;c<=f;c+=p){
+                   res.innerHTML+=`${c} `
                 }
             }
        }
