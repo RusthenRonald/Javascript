@@ -58,10 +58,12 @@
                 var i = Number(ini.value)
                 var f = Number(fim.value)
                 var p = Number(passo.value)
+                //contagem crescente
                 if (i<f){
                 for (var c = i;c<=f;c+=p){
                    res.innerHTML+=`${c} `
                 }
+                //contagem regressiva
                 }else{
                     for(var c =i ; c>=f;c-=p){
                         res.innerHTML+=`${c} `
