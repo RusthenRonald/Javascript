@@ -46,7 +46,9 @@
        function gerar(){
             var num= Number(document.getElementById('n').value)
             var res = document.getElementById('res')
-            for (var c = num)
+            for (var c = 1;c<=10;c++){
+                res.innerHTML+=`${num}x${c}=${num*c}`
+            }
        }
     </script>
 </body>
