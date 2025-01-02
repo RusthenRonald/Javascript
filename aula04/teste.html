@@ -28,7 +28,7 @@
 </head>
 <body>
     <header>
-        <h1>Tabuada</h1>
+        <h1>Contador</h1>
     </header>
     <section>
         <div>
@@ -62,9 +62,16 @@
                 if (p==0){
                     p=1
                 }
-                for (var c =i ;c<=f;c+=p){
+                if (i<f){
+                    for (var c =i ;c<=f;c+=p){
                     res.innerHTML+=`${c} `
                 }
+            } else{
+                for (var c =i;c>=f;c-=p){
+                    res.innerHTML+=`${c} `
+                }
+            }
+                
             }
        }
     </script>
