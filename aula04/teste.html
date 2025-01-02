@@ -54,10 +54,14 @@
                 window.alert('Dados não preenchidos!')
             }
             else{
+                res.innerHTML=''
                 window.alert('Continue!')
                 var i = Number(ini.value)
                 var f = Number(fim.value)
                 var p = Number(passo.value)
+                for (var c =i ;c<=f;c+=p){
+                    res.innerHTML+=`${c} `
+                }
             }
        }
     </script>
