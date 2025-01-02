@@ -35,16 +35,26 @@
             <label for="txtnum">Número: </label><input type="number" name="" id="txtnum">
             <input type="button" value="gerar tabuada" onclick="tabuada()">
         </div>
-        <div>
-
-        </div>
+        <select name="" id="res" size="10"></select>
     </section>
     <footer>
         <p>&copy;CursoemVideo</p>
     </footer>
     <script>
         function tabuada(){
-            
+            var num= Number(document.getElementById('txtnum').value)
+            var res= document.getElementById('res')
+            if(txtnum.value.length==0){
+                window.alert('dados inválidos!')
+            }
+            else{
+            res.innerHTML=''
+            for(var c = 1 ; c<=10;c++ ){
+                var item = document.createElement('option')
+                item.innerHTML=`${num}x${c}=${num*c}`
+                res.appendChild(item)
+            }
+        }
         }
     </script>
 </body>
