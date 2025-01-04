@@ -6,3 +6,4 @@ function parimp(n){
         return 'impar'
     }
 } 
+parimp(4)
