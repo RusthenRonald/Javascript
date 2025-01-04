@@ -6,4 +6,7 @@ function parimp(n){
         return 'impar'
     }
 } 
-console.log(parimp(3))
+let res =parimp(3)
+console.log(res)
+/*
+console.log(parimp(3))*/
