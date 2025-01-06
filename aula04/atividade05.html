@@ -21,8 +21,8 @@
             margin: auto;
         }
         select{
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
             width: 150px;
         }
         footer p{
@@ -42,7 +42,9 @@
             <select name="" id="flista" size="6"></select> <br>
             <input type="button" value="Finalizar">
         </div>
-        
+        <div id="res">
+
+        </div>
     </section>
     <footer>
         <p>&copy;CursoemVideo</p>
@@ -51,7 +53,7 @@
         var valores=[]
         function Adicionar(){
             var num = Number(document.getElementById('txtn').value)
-
+            var lista = document.getElementById('flista')
             var res = document.getElementById('res')
             if(num>=1 && num <=100){
                 window.alert('Continue!')
