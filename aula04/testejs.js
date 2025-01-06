@@ -1,5 +1,8 @@
-var v = function(x){
-    return x*2
+function fatorial (n){
+    var fat = 1
+    for (var c = n;c>1;c--){
+        fat=fat*c
+    }
+    return fat
 }
-var res = v(1)
-console.log(res)
+console.log(fatorial(5))
