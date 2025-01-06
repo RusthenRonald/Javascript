@@ -47,7 +47,12 @@
         function Adicionar(){
             var num = Number(document.getElementById('txtn').value)
             var res = document.getElementById('res')
-            
+            if(num>=1 && num <=100){
+                window.alert('Continue!')
+            }
+            else{
+                window.alert('Dados inválidos!')
+            }
         }
     </script>
 </body>
