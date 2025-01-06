@@ -1,4 +1,5 @@
-function soma(n1=1,n2=1){
-    return n1+n2
+var v = function(x){
+    return x*2
 }
-console.log(soma(2))
+var res = v(1)
+console.log(res)
