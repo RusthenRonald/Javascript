@@ -55,12 +55,11 @@
             var num = Number(document.getElementById('txtn').value)
             var lista = document.getElementById('flista')
             var res = document.getElementById('res')
-            if(num>=1 && num <=100){
-                window.alert('Continue!')
-                
+            if (isNumero(num.value) && inlista(num.value)){
+
             }
             else{
-                window.alert('Dados inválidos!')
+                window.alert('Valor inválido ou já encrontrado na lista!')
             }
         }
     </script>
