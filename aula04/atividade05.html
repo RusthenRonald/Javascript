@@ -50,13 +50,13 @@
         <p>&copy;CursoemVideo</p>
     </footer>
     <script>
-        var num = Number(document.getElementById('txtn').value)
-        var lista = document.getElementById('flista')
-        var res = document.getElementById('res')
-        var valores=[]
+        let num = document.getElementById('txtn')
+        let lista = document.getElementById('flista')
+        let res = document.getElementById('res')
+        let valores=[]
         function Adicionar(){          
             if (isNumero(num.value) && inLista(num.value,valores)){
-
+                window.alert('tudo ok')
             }
             else{
                 window.alert('Valor inválido ou já encrontrado na lista!')
@@ -71,7 +71,12 @@
             }
         }
         function inLista(n,l){
-
+            if(l.indexOf(Number(n))!= -1){
+                return true
+            }
+            else{
+                return false
+            }
         }
     </script>
 </body>
