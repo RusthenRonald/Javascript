@@ -55,7 +55,20 @@
         var res = document.getElementById('res')
         var valores = []
         function adicionar(){
-            if (isNumero(Number(num.value)) && inLista(Number(num.value,flista)))
+            if (isNumero(Number(num.value)) && inLista(Number(num.value,flista))){
+
+            }
+        }
+        function isNumero(n){
+            if(n>=1 && n <=100){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        function inLista(n,l){
+
         }
     </script>
 </body>
