@@ -72,14 +72,15 @@
         }
         function Adicionar(){
             if (isNumero(num.value) && !inLista(num.value,valores)){
-                window.alert('Continue!')
                 valores.push(Number(num.value))
                 var item = document.createElement('option')
-                item.innerHTML=valores
+                item.innerHTML=`Valor ${Number(num.value)} adicionado.`
+                flista.appendChild(item)
             }
             else{
                 window.alert('Inválido!')
             }
+            num.value=''
         }
     </script>
 </body>
