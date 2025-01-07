@@ -74,6 +74,8 @@
             if (isNumero(num.value) && !inLista(num.value,valores)){
                 window.alert('Continue!')
                 valores.push(Number(num.value))
+                var item = document.createElement('option')
+                item.innerHTML=valores
             }
             else{
                 window.alert('Inválido!')
