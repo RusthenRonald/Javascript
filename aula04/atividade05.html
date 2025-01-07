@@ -54,14 +54,6 @@
         var flista= document.getElementById('flista')
         var res = document.getElementById('res')
         var valores = []
-        function adicionar(){
-            if (isNumero(Number(num.value)) && !inLista(Number(num.value,flista))){
-                window.alert('Continue!')
-            }
-            else{
-                window.alert('Inválido!')
-            }
-        }
         function isNumero(n){
             if(Number(n)>=1 && Number(n)<=100){
                 return true
@@ -76,6 +68,14 @@
             }
             else {
                 return false
+            }
+        }
+        function Adicionar(){
+            if (isNumero(num.value) && !inLista(num.value,valores)){
+                window.alert('Continue!')
+            }
+            else{
+                window.alert('Inválido!')
             }
         }
     </script>
