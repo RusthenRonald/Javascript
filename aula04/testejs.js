@@ -1,8 +1,4 @@
-function fatorial (n){
-    var fat = 1
-    for (var c = n;c>1;c--){
-        fat=fat*c
-    }
-    return fat
+var valores=[1,6,8,3,8]
+for (var c = 0;c<valores.length;c++){
+    console.log(valores[c])
 }
-console.log(fatorial(5))
