@@ -53,12 +53,29 @@
         var num= document.getElementById('txtn')
         var flista= document.getElementById('flista')
         var res = document.getElementById('res')
+        var valores =[]
         function Adicionar(){
-            if(isNumero()&& !inLista()){
+            if(isNumero(num.value)&& !inLista(num.value,valores)){
 
             }
             else{
-                
+
+            }
+        }
+        function isNumero(n){
+            if(Number(n.value)>=1 && Number(n.value)<=100){
+                return true
+            }
+            else{
+                return false
+            }
+        }
+        function inLista(n,l){
+            if(l.indexOf(Number(n.value)) != -1){
+                return true
+            }
+            else{
+                return false
             }
         }
     </script>
