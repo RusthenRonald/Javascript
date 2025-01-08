@@ -56,14 +56,18 @@
         var valores =[]
         function Adicionar(){
             if(isNumero(num.value)&& !inLista(num.value,valores)){
-
+                valores.push(Number(num.value))
+                var item = document.createElement('option')
+                item.innerHTML=Number(num.value)
+                flista.appendChild(item)
             }
             else{
-
+                window.alert('dados inválidos!')
             }
+            num.value=''
         }
         function isNumero(n){
-            if(Number(n.value)>=1 && Number(n.value)<=100){
+            if(Number(n)>=1 && Number(n)<=100){
                 return true
             }
             else{
@@ -71,13 +75,14 @@
             }
         }
         function inLista(n,l){
-            if(l.indexOf(Number(n.value)) != -1){
+            if(l.indexOf(Number(n)) != -1){
                 return true
             }
             else{
                 return false
             }
         }
+
     </script>
 </body>
 </html>
