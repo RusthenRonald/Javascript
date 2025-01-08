@@ -91,7 +91,9 @@
                 var tot = valores.length
                 maior = valores[0]
                 menor=valores[0]
+                soma=0
                 for(var pos in valores){
+                    soma+=valores[pos]
                     if(valores[pos]>maior){
                         maior=valores[pos]
                     }
@@ -102,6 +104,7 @@
                 res.innerHTML=`Ao todo temos ${tot} número cadastrados`
                 res.innerHTML+=`<br> O maior valor foi ${maior}`
                 res.innerHTML+=`<br>O menor valor foi ${menor}`
+                res.innerHTML+=`<br> A soma de todos os valores foi ${soma}`
             }
         }
     </script>
