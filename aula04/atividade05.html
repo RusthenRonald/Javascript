@@ -58,7 +58,7 @@
             if(isNumero(num.value)&& !inLista(num.value,valores)){
                 valores.push(Number(num.value))
                 var item = document.createElement('option')
-                item.innerHTML=Number(num.value)
+                item.innerHTML=`Valor ${Number(num.value)} adicionado`
                 flista.appendChild(item)
             }
             else{
@@ -87,7 +87,8 @@
                 window.alert('Adicione valores para continuar!')
             }
             else{
-                window.alert('Continue!')
+                var tot = valores.length
+                res.innerHTML=`Ao todo temos ${tot} número cadastrados`
             }
         }
     </script>
