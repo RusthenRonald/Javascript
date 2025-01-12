@@ -1,3 +1,6 @@
-let amigo ={nome:'josé',sexo:'M',peso:85.4,engordar(p){}
-}
-console.log(amigo)
+let amigo ={nome:'josé',sexo:'M',peso:85.4,engordar(p=0){
+    console.log('engordou')
+    this.peso+=p
+}}
+amigo.engordar()     
+console.log(`${amigo.nome} pesa ${amigo.peso}`)
