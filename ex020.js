@@ -1,2 +1,3 @@
-let amigo ={nome:'josé',sexo:'M',peso:85.4}
+let amigo ={nome:'josé',sexo:'M',peso:85.4,engordar(p){}
+}
 console.log(amigo)
